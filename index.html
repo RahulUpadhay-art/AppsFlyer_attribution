@@ -92,26 +92,30 @@
         ul { margin-left: 20px; margin-top: 10px; line-height: 1.8; }
         ol { margin-left: 20px; margin-top: 10px; line-height: 1.8; }
         @media (max-width: 768px) { .partner-row { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } }
+        .best-practice-section { background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); border-left: 5px solid #667eea; border-radius: 8px; padding: 25px; margin: 25px 0; }
+        .best-practice-section h3 { color: #667eea; font-size: 1.1em; margin-bottom: 15px; }
+        .best-practice-section ul { margin-left: 25px; }
+        .best-practice-section li { margin-bottom: 12px; line-height: 1.8; color: #333; font-weight: 500; }
+        .best-practice-highlight { background: #fff9e6; padding: 15px; border-radius: 6px; margin: 15px 0; border-left: 4px solid #ffc107; }
+        .best-practice-highlight strong { color: #f57f17; }
     </style>
 </head>
 <body>
     <div class="container">
         <header style="margin-bottom: 20px; padding: 0;">
             <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 12px; text-align: center; overflow: hidden;">
-                <!-- Choreograph Brand Image -->
-                <img src="data:image/png;base64,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" style="width: 100%; height: auto; display: block; max-height: 160px; object-fit: cover;" alt="Choreograph">
-                
-                <!-- AppsFlyer Attribution Text Below -->
                 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; text-align: center;">
                     <h1 style="margin: 0; font-size: 2.2em; color: white;">AppsFlyer Attribution</h1>
                 </div>
             </div>
         </header>
 
-
         <div class="nav-tabs">
             <button class="nav-tab active" data-tab="attribution">📊 Attribution</button>
             <button class="nav-tab" data-tab="skan">🍎 SKAN</button>
+            <button class="nav-tab" data-tab="useful-links">🔗 Useful Links</button>
+            <button class="nav-tab" data-tab="deep-linking">🎯 Deep Linking</button>
+            <button class="nav-tab" data-tab="best-practices">⭐ Best Practices</button>
         </div>
 
         <div class="content-panel">
@@ -178,6 +182,70 @@
                             <div style="color: #667eea; font-weight: 600;">NOW</div>
                         </div>
                         <div id="events-flow"></div>
+                    </div>
+                </div>
+
+                <!-- SKAN 4.0 Flow Explanation -->
+                <div class="info-card" style="margin-top: 30px; background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); color: white;">
+                    <h3>📱 SKAN 4.0 Attribution (iOS Consent Denied)</h3>
+                    <p style="font-size: 13px; line-height: 1.6;"><strong>Critical:</strong> When iOS user denies consent, AppsFlyer uses SKAN 4.0 which operates on <strong>CLICKS ONLY</strong> (0-35 days). Impressions are completely ignored.</p>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 12px; border-radius: 6px; margin-top: 12px;">
+                        <strong style="color: #FFD700;">⚡ SKAN 4.0 Click Flow:</strong>
+                        <div style="font-size: 12px; margin-top: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 3px;">👤 Click</span>
+                            <span>→</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 3px;">📲 App Install</span>
+                            <span>→</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 3px;">✅ Conversion</span>
+                            <span>→</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 3px;">📤 Postback</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Attribution Waterfall Priority -->
+                <div class="info-card" style="margin-top: 30px; background: #f8f9fa; border: 2px solid #667eea;">
+                    <h3 style="color: #667eea;">📊 AppsFlyer Attribution Waterfall Priority</h3>
+                    <p style="font-size: 12px; color: #555; line-height: 1.5;">AppsFlyer prioritizes attribution methods in this order:</p>
+                    
+                    <div style="margin-top: 15px; space: 0;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start;">
+                            <div style="background: #0066FF; color: white; padding: 4px 10px; border-radius: 3px; font-weight: bold; font-size: 11px; min-width: 35px;">1st</div>
+                            <div style="flex: 1;">
+                                <strong style="color: #0066FF;">Deterministic Click</strong>
+                                <div style="font-size: 11px; color: #666; margin-top: 2px;">Device ID matching (IDFA/GAID) - Highest accuracy 99%+</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start;">
+                            <div style="background: #7B5BA3; color: white; padding: 4px 10px; border-radius: 3px; font-weight: bold; font-size: 11px; min-width: 35px;">2nd</div>
+                            <div style="flex: 1;">
+                                <strong style="color: #7B5BA3;">Probabilistic Click</strong>
+                                <div style="font-size: 11px; color: #666; margin-top: 2px;">Browser fingerprint + IP matching - 65-80% accuracy</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start;">
+                            <div style="background: #10B981; color: white; padding: 4px 10px; border-radius: 3px; font-weight: bold; font-size: 11px; min-width: 35px;">3rd</div>
+                            <div style="flex: 1;">
+                                <strong style="color: #10B981;">Deterministic View</strong>
+                                <div style="font-size: 11px; color: #666; margin-top: 2px;">View-through engagement based on identifiers</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start;">
+                            <div style="background: #F59E0B; color: white; padding: 4px 10px; border-radius: 3px; font-weight: bold; font-size: 11px; min-width: 35px;">4th</div>
+                            <div style="flex: 1;">
+                                <strong style="color: #F59E0B;">Probabilistic View</strong>
+                                <div style="font-size: 11px; color: #666; margin-top: 2px;">View impressions with fingerprinting - Lowest confidence</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start; background: #FFE5E5; padding: 8px; border-radius: 4px;">
+                            <div style="background: #EF4444; color: white; padding: 4px 10px; border-radius: 3px; font-weight: bold; font-size: 11px; min-width: 35px;">iOS</div>
+                            <div style="flex: 1;">
+                                <strong style="color: #EF4444;">SKAN 4.0 (No Consent) - Click Attribution ONLY</strong>
+                                <div style="font-size: 11px; color: #EF4444; margin-top: 2px; font-weight: bold;">⚠️ ONLY Recent clicks within 0-35 days receive credit</div>
+                                <div style="font-size: 10px; color: #666; margin-top: 4px;">❌ View-through impressions COMPLETELY IGNORED • Postback: 0-2, 3-7, 8-35 days • ~60% accuracy</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -634,75 +702,489 @@ Bit 5: Content Viewed</div>
                     </div>
                 </div>
             </div>
+
+            <!-- Useful Links Tab -->
+            <div id="useful-links" class="tab-content">
+                <h2 class="section-title">🔗 Useful Links & Resources</h2>
+
+                <div class="info-card">
+                    <h3>📱 OneLink Setup & Structure</h3>
+                    <p>Complete setup documentation for creating flexible mobile measurement links</p>
+                    
+                    <h4>Resources:</h4>
+                    <ul>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/115005248543-OneLink-guide" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">OneLink Guide</a> - Complete OneLink overview</li>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032246-Create-a-OneLink-template" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Create OneLink Templates</a> - Flexible link templates</li>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/360002329137-Brand-OneLink-with-your-domain" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Brand Your OneLink</a> - Use your own domain</li>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/207447163-About-link-structure-and-parameters" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Link Parameters</a> - Attribution parameters guide</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🔀 Deep Linking Methods</h3>
+                    <p>Best practices using Universal Links and App Links for seamless routing across devices</p>
+                    
+                    <ul>
+                        <li><a href="https://dev.appsflyer.com/hc/docs/dl_work_flow" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Deep Linking Workflow</a> - Complete implementation guide</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🔗 Link Creation Options</h3>
+                    <p>Multiple methods to create OneLink links for your campaigns</p>
+                    
+                    <h4>Creation Methods:</h4>
+                    <ul>
+                        <li><strong>OneLink API:</strong> <a href="https://support.appsflyer.com/hc/en-us/articles/360001250345-Use-OneLink-API-to-create-links-in-large-scale-campaigns" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">API Documentation</a> - Programmatic link generation</li>
+                        <li><strong>Bulk CSV:</strong> <a href="https://support.appsflyer.com/hc/en-us/articles/14511403892369-Perform-OneLink-bulk-actions-via-CSV" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Bulk CSV Upload</a> - Create 100+ links at once</li>
+                        <li><strong>Manual UI:</strong> Dashboard link builder for quick testing and single campaign creation</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Deep Linking with SRNs</h3>
+                    <p>Source-Related Networks (SRNs) for tracking which specific network/partner drove the install</p>
+                    
+                    <ul>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/360001546905-Self-reporting-networks-SRNs" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">SRN Deep Linking Guide</a> - Complete SRN implementation</li>
+                    </ul>
+
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong>Implementation Parameter:</strong><br>
+                        <code style="color: #667eea; font-weight: 600;">af_srn=network_name</code><br><br>
+                        <strong>Use Cases:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Multi-partner tracking</li>
+                            <li>Revenue attribution by network</li>
+                            <li>Cohort analysis across SRNs</li>
+                            <li>Partner commission calculations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3>📚 Quick Links Summary</h3>
+                    <ul style="color: white;">
+                        <li>✅ OneLink Guide - Full platform overview</li>
+                        <li>✅ Template & Branding - Customize your links</li>
+                        <li>✅ Link Parameters - Attribution tracking</li>
+                        <li>✅ Deep Linking Workflow - Implementation guide</li>
+                        <li>✅ OneLink API - Programmatic creation</li>
+                        <li>✅ Bulk CSV - Scale link creation</li>
+                        <li>✅ SRN Deep Linking - Network attribution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DEEP LINKING BEST PRACTICES TAB -->
+            <div id="deep-linking" class="tab-content">
+                <h2 class="section-title">🎯 Deep Linking Best Practices & Consent Guide</h2>
+
+                <div class="best-practice-section">
+                    <h3>📌 Understanding Deep Linking with AppsFlyer & Consent</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.8; color: #333;">
+                        Deep linking in AppsFlyer relies on accurate attribution data capture through the SDK. When users grant consent, the system can fully leverage device identifiers and attribution matching. However, when consent is denied, you need alternative routing strategies to maintain functionality while respecting user privacy.
+                    </p>
+                </div>
+
+                <div class="best-practice-highlight">
+                    <strong>🔑 Key Concept:</strong> Deferred deep linking (routing users to specific in-app content after install) depends on successful attribution data capture and matching via the SDK. The SDK must receive attribution data to execute dynamic routing based on campaign parameters.
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>✅ When Consent is Granted</h3>
+                    <ul>
+                        <li><strong>Full Attribution Capture:</strong> The SDK receives and matches device identifiers (IDFA on iOS, GAID on Android) with campaign parameters</li>
+                        <li><strong>Dynamic Deep Linking:</strong> Users are routed to specific in-app content based on the campaign that drove the install</li>
+                        <li><strong>Callbacks Available:</strong> AppsFlyer SDK exposes callbacks like <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">onConversionDataReceived</code> and <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">onAppOpenAttribution</code> which provide deep linking info only when attribution is successful and permitted</li>
+                        <li><strong>Enhanced Analytics:</strong> Campaign-based routing enables precise cohort analysis and conversion tracking</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-highlight" style="background: #ffebee; border-left-color: #f44336;">
+                    <strong>⚠️ When Consent is Denied:</strong> The SDK may not receive or return attribution data and deep link parameters since device identifiers and related tracking may be unavailable. Attribution-based deep linking won't function, but basic deep linking via universal/app links (without attribution) still works.
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>❌ Limitations Without Consent</h3>
+                    <ul>
+                        <li><strong>No Attribution Data:</strong> The SDK cannot access device identifiers needed for matching users to campaigns</li>
+                        <li><strong>No Dynamic Routing:</strong> Without attribution, you cannot route users based on which campaign drove the install</li>
+                        <li><strong>Callback Restrictions:</strong> Callbacks won't return deep linking parameters tied to AppsFlyer attribution</li>
+                        <li><strong>Limited Analytics:</strong> Cannot accurately measure campaign effectiveness or user journey from ad to specific in-app content</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🔗 Fallback Solutions Without Attribution</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.8; color: #333;">
+                        The app can still handle universal links or custom URI schemes that open the app directly (non-attribution based deep linking), but these links won't carry AppsFlyer's attribution data for dynamic routing or enhanced analytics.
+                    </p>
+                    <ul>
+                        <li><strong>Universal Links (iOS) / App Links (Android):</strong> Standard deep links that open specific app screens without requiring AppsFlyer attribution</li>
+                        <li><strong>Custom URL Schemes:</strong> Your app can define custom schemes (e.g., <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">myapp://content/page</code>) to route users, but without campaign context</li>
+                        <li><strong>Default Routing:</strong> Route consent-denied users to the app home screen or a generic onboarding experience</li>
+                        <li><strong>No Campaign Context:</strong> These fallback links won't carry AppsFlyer's attribution data for dynamic routing or enhanced analytics</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🛠️ Implementation Best Practices</h3>
+                    <ul>
+                        <li><strong>Implement Consent Checks:</strong> Always check user consent status before attempting to access AppsFlyer attribution data</li>
+                        <li><strong>SDK Callback Handling:</strong> Use <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">onConversionDataReceived</code> and <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">onAppOpenAttribution</code> callbacks, but handle null/empty responses when consent is denied</li>
+                        <li><strong>Fallback Logic:</strong> Design your app to gracefully handle both attribution-based and non-attribution-based deep linking scenarios</li>
+                        <li><strong>User Experience:</strong> Ensure users without consent still get a seamless experience, even if they can't access campaign-specific content</li>
+                        <li><strong>Privacy Compliance:</strong> Respect user choices and never attempt to track without proper consent, as this violates privacy regulations (GDPR, CCPA, etc.)</li>
+                        <li><strong>Testing:</strong> Test both consent granted and denied scenarios to ensure your app handles both paths correctly</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-highlight" style="background: #e8f5e9; border-left-color: #4caf50;">
+                    <strong>✅ Summary:</strong> AppsFlyer deep linking features function fully when consent is granted. When consent is denied, implement fallback universal/app links or custom schemes that don't rely on AppsFlyer attribution data. Always respect user privacy choices while maintaining a great user experience.
+                </div>
+
+                <div class="info-card" style="margin-top: 30px;">
+                    <h3>📚 Additional Resources</h3>
+                    <ul>
+                        <li><a href="https://dev.appsflyer.com/hc/docs/dl_work_flow" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Deep Linking Workflow Documentation</a> - Complete implementation guide</li>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032246-Create-a-OneLink-template" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">OneLink Templates</a> - Create flexible deep linking URLs</li>
+                        <li><a href="https://dev.appsflyer.com/hc/docs/ios_sdk_reference_appsflyerlib#onappOpenattribution" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">iOS SDK Reference - onAppOpenAttribution</a> - Callback documentation</li>
+                        <li><a href="https://dev.appsflyer.com/hc/docs/android_sdk_reference#onconversion-data-received" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">Android SDK Reference - onConversionDataReceived</a> - Callback documentation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BEST PRACTICES TAB -->
+            <div id="best-practices" class="tab-content">
+                <h2 class="section-title">⭐ AppsFlyer Best Practices</h2>
+
+                <div class="best-practice-section">
+                    <h3>📋 SDK Implementation & Initialization</h3>
+                    <ul>
+                        <li><strong>Initialize Early:</strong> Call AppsFlyer SDK initialization in your app delegate or application class before any other tracking code</li>
+                        <li><strong>Set Dev Key:</strong> Configure your unique dev key from AppsFlyer dashboard during initialization</li>
+                        <li><strong>Enable Debug Mode (Development Only):</strong> Use debug logging during development to verify events are being tracked, but disable in production</li>
+                        <li><strong>Handle Callbacks:</strong> Implement all available callbacks (onConversionDataReceived, onAppOpenAttribution, etc.) to capture attribution data</li>
+                        <li><strong>Test Before Release:</strong> Thoroughly test all tracking scenarios before deploying to production</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🔐 Privacy & Consent Management</h3>
+                    <ul>
+                        <li><strong>Request Consent First:</strong> Always request user consent before tracking, following GDPR, CCPA, and local privacy regulations</li>
+                        <li><strong>Respect User Choice:</strong> Honor both consent granted and denied states consistently</li>
+                        <li><strong>Privacy Policy:</strong> Clearly disclose in your privacy policy what data AppsFlyer collects and how it's used</li>
+                        <li><strong>Implement Opt-Out:</strong> Provide users with easy access to opt-out from tracking via app settings</li>
+                        <li><strong>Data Retention:</strong> Understand AppsFlyer's data retention policies and configure appropriately for your region</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>📊 Event Tracking & Attribution</h3>
+                    <ul>
+                        <li><strong>Track Key Events:</strong> Log critical in-app events (registration, purchase, subscription) for accurate ROI measurement</li>
+                        <li><strong>Use Standardized Event Names:</strong> Follow AppsFlyer's recommended event names (af_purchase, af_add_to_cart, etc.) for better data accuracy</li>
+                        <li><strong>Include Event Values:</strong> Always pass revenue, currency, and other relevant parameters with purchase events</li>
+                        <li><strong>Consistent Parameters:</strong> Use standardized parameter names across all events for better analytics</li>
+                        <li><strong>Real-Time Logging:</strong> Log events immediately when they occur, don't batch them for later</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🎯 Deep Linking Best Practices</h3>
+                    <ul>
+                        <li><strong>Implement Fallback Logic:</strong> Handle both attribution-based and non-attribution based deep linking scenarios</li>
+                        <li><strong>Test All Paths:</strong> Test deep links with both consent granted and denied to ensure proper routing</li>
+                        <li><strong>Use OneLink:</strong> Leverage AppsFlyer's OneLink for unified URL shortening and attribution</li>
+                        <li><strong>Verify Deep Links:</strong> Test deep links on both iOS (Universal Links) and Android (App Links) before campaigns go live</li>
+                        <li><strong>Handle Edge Cases:</strong> Plan for users who may have app already installed or direct app opens</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🍎 iOS-Specific Best Practices</h3>
+                    <ul>
+                        <li><strong>IDFA Management:</strong> Implement App Tracking Transparency (ATT) framework and handle IDFA availability gracefully</li>
+                        <li><strong>SKAN Integration:</strong> For iOS 14.5+, implement SKAdNetwork integration alongside AppsFlyer SDK</li>
+                        <li><strong>Universal Links:</strong> Configure Universal Links in your app and Apple's apple-app-site-association file</li>
+                        <li><strong>Receipt Validation:</strong> Enable receipt validation in production to prevent fraud</li>
+                        <li><strong>iOS Version Support:</strong> Keep SDK updated for compatibility with latest iOS versions</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-section">
+                    <h3>🤖 Android-Specific Best Practices</h3>
+                    <ul>
+                        <li><strong>GAID Integration:</strong> Ensure Google Advertising ID (GAID) is properly integrated for device identification</li>
+                        <li><strong>Install Referrer:</strong> Implement Google Play Install Referrer library for accurate install tracking</li>
+                        <li><strong>App Links:</strong> Configure App Links for Android deep linking and verify via Digital Asset Links file</li>
+                        <li><strong>Permissions:</strong> Request only necessary permissions (INTERNET, ACCESS_NETWORK_STATE) and explain their purpose</li>
+                        <li><strong>ProGuard Rules:</strong> Add proper ProGuard rules when obfuscating code to preserve AppsFlyer SDK functionality</li>
+                    </ul>
+                </div>
+
+                <div class="best-practice-highlight" style="background: #fff3e0; border-left-color: #ff9800;">
+                    <strong>⚠️ Production Deployment Checklist:</strong><br>
+                    • Disable debug mode<br>
+                    • Verify all analytics events are tracked<br>
+                    • Test deep linking across all campaigns<br>
+                    • Confirm attribution data appears in dashboard<br>
+                    • Monitor SDK crash rates (should be <0.01%)<br>
+                    • Validate consent handling works correctly<br>
+                    • Set up alerts for tracking failures<br>
+                    • Document all custom events and parameters
+                </div>
+
+                <div class="info-card" style="margin-top: 30px;">
+                    <h3>📚 Additional Resources</h3>
+                    <ul>
+                        <li><a href="https://support.appsflyer.com" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">AppsFlyer Support Center</a> - Comprehensive documentation and FAQs</li>
+                        <li><a href="https://dev.appsflyer.com" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">AppsFlyer Developer Hub</a> - Technical implementation guides</li>
+                        <li><a href="https://support.appsflyer.com/hc/en-us/articles/207032246" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">OneLink Guide</a> - Creating and managing universal links</li>
+                        <li><a href="https://www.appsflyer.com/blog" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 600;">AppsFlyer Blog</a> - Latest industry insights and updates</li>
+                    </ul>
+                </div>
+
+                <div class="info-card" style="margin-top: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3>🏗️ SDK vs SDK-Less: Architecture Comparison</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">AppsFlyer offers flexible integration approaches. Choose based on your technical requirements:</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                        <!-- Native SDK -->
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #FFD700;">
+                            <h4 style="margin-top: 0; color: #FFD700;">📱 Native SDK</h4>
+                            <strong>Best For:</strong> Mobile apps with full feature requirements
+                            <ul style="font-size: 13px; margin: 10px 0; padding-left: 20px;">
+                                <li>Real-time event tracking</li>
+                                <li>Uninstall measurement</li>
+                                <li>Receipt validation</li>
+                                <li>Deep linking (deferred)</li>
+                                <li>Offline event queuing</li>
+                                <li>Automatic user consent</li>
+                            </ul>
+                            <strong style="color: #4CAF50;">✓ Pros:</strong>
+                            <ul style="font-size: 13px; margin: 5px 0; padding-left: 20px; color: #C8E6C9;">
+                                <li>Complete feature set</li>
+                                <li>Automatic data collection</li>
+                                <li>Better offline handling</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- SDK-Less -->
+                        <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #FF6B6B;">
+                            <h4 style="margin-top: 0; color: #FF6B6B;">🔗 SDK-Less (S2S)</h4>
+                            <strong>Best For:</strong> Backend-driven tracking & data privacy
+                            <ul style="font-size: 13px; margin: 10px 0; padding-left: 20px;">
+                                <li>Server-to-server data flow</li>
+                                <li>Custom consent handling</li>
+                                <li>Sensitive user data control</li>
+                                <li>Third-party data integration</li>
+                                <li>Bulk event reporting</li>
+                                <li>Legacy system migration</li>
+                            </ul>
+                            <strong style="color: #4CAF50;">✓ Pros:</strong>
+                            <ul style="font-size: 13px; margin: 5px 0; padding-left: 20px; color: #C8E6C9;">
+                                <li>Full data control</li>
+                                <li>Privacy compliant</li>
+                                <li>Backend flexibility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Challenges Section -->
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong style="color: #FF6B6B;">⚠️ Challenges:</strong>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px; font-size: 13px;">
+                            <div>
+                                <strong>Native SDK:</strong>
+                                <ul style="margin: 5px 0; padding-left: 20px;">
+                                    <li>App size increase</li>
+                                    <li>Privacy concerns</li>
+                                    <li>App store review risk</li>
+                                    <li>Limited control over data</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <strong>SDK-Less:</strong>
+                                <ul style="margin: 5px 0; padding-left: 20px;">
+                                    <li>No offline events</li>
+                                    <li>No uninstall tracking</li>
+                                    <li>Backend dependency</li>
+                                    <li>Manual implementation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hybrid Approach for Fintech -->
+                <div class="info-card" style="margin-top: 30px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white;">
+                    <h3>💡 Hybrid Approach: Recommended for Fintech & Regulated Industries</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">Combine both methods for maximum compliance and data control:</p>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong>🏆 Why Hybrid for Fintech?</strong>
+                        <ul style="font-size: 13px; margin-top: 10px; padding-left: 20px;">
+                            <li><strong>Regulatory Compliance:</strong> GDPR, CCPA, PCI-DSS control via backend</li>
+                            <li><strong>Data Sovereignty:</strong> Sensitive data never leaves your servers</li>
+                            <li><strong>Audit Trail:</strong> Complete transparency through S2S logging</li>
+                            <li><strong>User Consent:</strong> Granular control over what gets shared</li>
+                            <li><strong>Risk Mitigation:</strong> No app-level tracking vulnerabilities</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong>🔧 Hybrid Implementation Pattern:</strong>
+                        <div style="font-size: 13px; margin-top: 10px;">
+                            <div style="margin-bottom: 10px;">
+                                <strong>Layer 1 - Lightweight SDK (App)</strong>
+                                <div style="margin-left: 15px; margin-top: 5px; font-style: italic; color: #C8E6C9;">
+                                    Install tracking only • Session counting • Device identifiers
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <strong>Layer 2 - Backend Processing (S2S)</strong>
+                                <div style="margin-left: 15px; margin-top: 5px; font-style: italic; color: #C8E6C9;">
+                                    Event enrichment • Consent validation • Data anonymization • Third-party sync
+                                </div>
+                            </div>
+                            <div>
+                                <strong>Layer 3 - Privacy Engine</strong>
+                                <div style="margin-left: 15px; margin-top: 5px; font-style: italic; color: #C8E6C9;">
+                                    PII redaction • Consent management • Data retention policies • Right-to-be-forgotten
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <strong>📊 Deployment Strategy:</strong>
+                        <table style="width: 100%; font-size: 12px; margin-top: 10px; border-collapse: collapse;">
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                <td style="padding: 8px; text-align: left;"><strong>Phase 1</strong></td>
+                                <td>Minimal SDK for app launch events only</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                <td style="padding: 8px;"><strong>Phase 2</strong></td>
+                                <td>S2S API for all in-app events & transactions</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                <td style="padding: 8px;"><strong>Phase 3</strong></td>
+                                <td>Consent middleware integrated with your CMP</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Phase 4</strong></td>
+                                <td>Privacy automation (GDPR/CCPA enforcement)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div style="background: rgba(76, 175, 80, 0.2); padding: 12px; border-radius: 6px; margin-top: 15px; border-left: 4px solid #4CAF50;">
+                        <strong>💰 Fintech Example - Payment App:</strong>
+                        <div style="font-size: 12px; margin-top: 8px;">
+                            SDK sends: App install, session opens → S2S processes: Transaction events (redacted), User acquisition source (from backend), Compliance events
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        // Attribution Type Logic
+        // Attribution Waterfall Logic - AppsFlyer Priority Order
         function updateAttributionType() {
             const environment = document.querySelector('input[name="environment"]:checked').value;
             const consent = document.querySelector('input[name="consent"]:checked').value;
             
-            let attributionType = '';
-            let accuracy = '';
-            let signals = '';
-            let bgColor = '';
+            let waterfall = [];
+            let displayHTML = '';
+            let bgColor = consent === 'present' ? '#d4edda' : '#fff3cd';
             
             if (consent === 'present') {
-                // WITH CONSENT
+                // WITH CONSENT - Full Waterfall Priority
                 if (environment === 'ios') {
-                    attributionType = 'Deterministic Click-Through (IDFA)';
-                    accuracy = 'Accuracy: 99%+ | Device-level matching with IDFA';
-                    signals = '<strong>🔑 Signals:</strong> IDFA + Device Model + OS Version';
-                    bgColor = '#d4edda';
+                    waterfall = [
+                        { priority: '1st', name: 'Deterministic Click-Through (IDFA)', accuracy: '99%+', signals: 'IDFA + Device Model + OS Version', color: '#0066FF' },
+                        { priority: '2nd', name: 'Probabilistic Click-Through', accuracy: '65-80%', signals: 'IP Range + User-Agent + Browser Fingerprint + Timestamp', color: '#7B5BA3' },
+                        { priority: '3rd', name: 'Deterministic View-Through', accuracy: '~90%', signals: 'IDFA + View timestamp', color: '#10B981' },
+                        { priority: '4th', name: 'Probabilistic View-Through', accuracy: '55-70%', signals: 'Browser fingerprint + View context', color: '#F59E0B' }
+                    ];
                 } else if (environment === 'android') {
-                    attributionType = 'Deterministic Click-Through (GAID)';
-                    accuracy = 'Accuracy: 99%+ | Device-level matching with GAID';
-                    signals = '<strong>🔑 Signals:</strong> Google Advertising ID + Device Model + OS';
-                    bgColor = '#d4edda';
-                } else if (environment.includes('mobile')) {
-                    attributionType = 'Probabilistic Click-Through (Web)';
-                    accuracy = 'Accuracy: 65-80% | First-party cookies + URL parameters';
-                    signals = '<strong>🔑 Signals:</strong> First-party Cookies + UTM Parameters + User-Agent + IP Range + Browser Fingerprint';
-                    bgColor = '#d4edda';
+                    waterfall = [
+                        { priority: '1st', name: 'Deterministic Click-Through (GAID)', accuracy: '99%+', signals: 'Google Advertising ID + Device Model + OS', color: '#0066FF' },
+                        { priority: '2nd', name: 'Probabilistic Click-Through', accuracy: '65-80%', signals: 'IP Range + User-Agent + Browser Fingerprint + Timestamp', color: '#7B5BA3' },
+                        { priority: '3rd', name: 'Deterministic View-Through', accuracy: '~90%', signals: 'GAID + View timestamp', color: '#10B981' },
+                        { priority: '4th', name: 'Probabilistic View-Through', accuracy: '55-70%', signals: 'Browser fingerprint + View context', color: '#F59E0B' }
+                    ];
                 } else {
-                    attributionType = 'Deterministic Click-Through';
-                    accuracy = 'Accuracy: 99%+ | Device-level matching with Analytics ID';
-                    signals = '<strong>🔑 Signals:</strong> Analytics ID + User Agent + Device Fingerprint';
-                    bgColor = '#d4edda';
+                    waterfall = [
+                        { priority: '1st', name: 'Deterministic Click-Through', accuracy: '99%+', signals: 'Analytics ID + Device Fingerprint', color: '#0066FF' },
+                        { priority: '2nd', name: 'Probabilistic Click-Through', accuracy: '70-85%', signals: 'IP Range + User-Agent + Browser + Timestamp', color: '#7B5BA3' },
+                        { priority: '3rd', name: 'Deterministic View-Through', accuracy: '~85%', signals: 'Analytics ID + View timestamp', color: '#10B981' },
+                        { priority: '4th', name: 'Probabilistic View-Through', accuracy: '60-75%', signals: 'Browser fingerprint + IP + Context', color: '#F59E0B' }
+                    ];
                 }
             } else {
-                // NO CONSENT
-                if (environment === 'ios') {
-                    attributionType = 'SKAN 4.0 - Privacy-Preserving Attribution';
-                    accuracy = 'Accuracy: ~60% (Aggregate) | 0-35 day lookback window | Subject to anonymity & crowd tiers';
-                    signals = '<strong>🔑 Signals:</strong> 6-bit CV + Campaign ID + Coarse CV | Lookback: 0-2, 3-7, 8-35 days | CLICK-THROUGH ONLY (View-through ignored) | Prioritizes nearest click | Subject to anonymity & crowd tiers';
-                    bgColor = '#fff3cd';
-                } else if (environment.includes('mobile')) {
-                    attributionType = 'Probabilistic Attribution (Web)';
-                    accuracy = 'Accuracy: 55-70% | Cross-site tracking limited';
-                    signals = '<strong>🔑 Signals:</strong> IP Range + User-Agent + Browser Type + Timestamp + Device Type (Limited by ITP/ETP)';
-                    bgColor = '#e7d4f5';
+                // NO CONSENT - Determine attribution method based on environment
+                if (environment === 'ios' || environment === 'mobile-safari' || environment === 'desktop-mac') {
+                    // iOS App, Mobile Safari, Desktop-Mac = SKAN 4.0 (clicks only, 0-35 days)
+                    waterfall = [
+                        { priority: '1st', name: 'SKAN 4.0 Deterministic Click (0-35 days)', accuracy: '~60%', signals: '⚠️ CLICKS ONLY | 6-bit Conversion Value + Campaign ID | Postback Windows: 0-2, 3-7, 8-35 days | Recent click within 0-35 days receives credit | Subject to anonymity & crowd tiers | ❌ VIEW-THROUGH COMPLETELY IGNORED', color: '#EF4444' }
+                    ];
                 } else {
-                    attributionType = 'Probabilistic Attribution';
-                    accuracy = 'Accuracy: 70-85% | Cohort fingerprint matching';
-                    signals = '<strong>🔑 Signals:</strong> IP Range (first 3 octets) + User-Agent + OS + Browser + Timestamp + Device Model + Screen Resolution';
-                    bgColor = '#e7d4f5';
+                    // Android, Mobile Chrome, Mobile Firefox, Desktop Windows = AppsFlyer waterfall (clicks prioritized over views)
+                    waterfall = [
+                        { priority: '1st', name: 'Probabilistic Click-Through', accuracy: '70-85%', signals: 'IP Range (first 3 octets) + User-Agent + Browser + Timestamp | ⚠️ CLICKS PRIORITIZED OVER VIEWS', color: '#0066FF' },
+                        { priority: '2nd', name: 'Probabilistic View-Through', accuracy: '55-70%', signals: 'Browser fingerprint + Cross-site tracking limited | View-through only if NO clicks found', color: '#7B5BA3' }
+                    ];
                 }
             }
             
+            // Build waterfall display HTML
+            displayHTML = '<div style="margin-top: 15px;">';
+            waterfall.forEach((method, index) => {
+                const isLast = index === waterfall.length - 1;
+                const borderStyle = isLast ? '' : 'border-bottom: 2px solid #ddd;';
+                
+                displayHTML += `
+                    <div style="display: flex; gap: 12px; padding: 12px 0; ${borderStyle} align-items: flex-start;">
+                        <div style="background: ${method.color}; color: white; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 11px; min-width: 45px; text-align: center;">
+                            ${method.priority}
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="font-weight: 600; color: #333; margin-bottom: 4px;">${method.name}</div>
+                            <div style="font-size: 12px; color: #666; margin-bottom: 4px;">
+                                <strong>Accuracy:</strong> ${method.accuracy}
+                            </div>
+                            <div style="font-size: 11px; color: #777;">
+                                <strong>Signals:</strong> ${method.signals}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            displayHTML += '</div>';
+            
             const displayDiv = document.getElementById('attribution-type-display');
             displayDiv.style.backgroundColor = bgColor;
-            document.getElementById('attr-type-value').textContent = attributionType;
-            document.getElementById('attr-accuracy').textContent = accuracy;
+            
+            // Update main display
+            const primaryMethod = waterfall[0];
+            document.getElementById('attr-type-value').innerHTML = `
+                <strong style="color: ${primaryMethod.color};">▸ ${primaryMethod.name}</strong>
+                <div style="font-size: 12px; color: #666; margin-top: 5px;">Accuracy: ${primaryMethod.accuracy}</div>
+            `;
+            document.getElementById('attr-accuracy').innerHTML = `
+                <strong>Method Priority (Waterfall):</strong> AppsFlyer uses the highest priority available
+            `;
             
             const signalsDiv = document.getElementById('attr-signals');
-            if (signals) {
-                signalsDiv.innerHTML = signals;
+            if (displayHTML) {
+                signalsDiv.innerHTML = displayHTML;
                 signalsDiv.style.display = 'block';
-                signalsDiv.style.marginTop = '10px';
-                signalsDiv.style.paddingTop = '10px';
-                signalsDiv.style.borderTop = '1px solid currentColor';
+                signalsDiv.style.marginTop = '15px';
             }
         }
         
@@ -710,7 +1192,6 @@ Bit 5: Content Viewed</div>
         document.addEventListener('DOMContentLoaded', () => {
             updateAttributionType();
         });
-
 
         const MEDIA_PARTNERS = {
             'google_search': { name: 'Google Search', clickWindow: { min: 1, max: 90, default: 30 }, viewWindow: { min: 1, max: 1, default: 1 } },
@@ -731,10 +1212,13 @@ Bit 5: Content Viewed</div>
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.addEventListener('click', function() {
                 const target = this.getAttribute('data-tab');
-                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                this.classList.add('active');
-                document.getElementById(target).classList.add('active');
+                const targetElement = document.getElementById(target);
+                if (targetElement) {
+                    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                    targetElement.classList.add('active');
+                }
             });
         });
 
@@ -822,9 +1306,17 @@ Bit 5: Content Viewed</div>
             const clicksInWindow = events.filter(e => e.type === 'Click-Through' && e.withinWindow);
             const viewsInWindow = events.filter(e => e.type === 'View-Through' && e.withinWindow);
             let winner;
-            if (clicksInWindow.length > 0) { winner = clicksInWindow[0]; winner.method = 'Last Click'; } 
-            else if (viewsInWindow.length > 0) { winner = viewsInWindow[viewsInWindow.length - 1]; winner.method = 'First View'; } 
-            else { winner = { partner: 'Organic', method: 'No paid attribution' }; }
+            if (clicksInWindow.length > 0) { 
+                winner = clicksInWindow[0]; 
+                winner.method = 'Last Click Attribution'; 
+            } 
+            else if (viewsInWindow.length > 0) { 
+                winner = viewsInWindow[viewsInWindow.length - 1]; 
+                winner.method = 'View-Through (No Clicks)'; 
+            } 
+            else { 
+                winner = { partner: 'Organic', method: 'No paid attribution' }; 
+            }
             document.getElementById('animation-container').style.display = 'block';
             document.getElementById('install-time-display').textContent = installDT.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
             createAnimatedBubbles();
@@ -847,18 +1339,25 @@ Bit 5: Content Viewed</div>
             const consent = document.querySelector('input[name="consent"]:checked').value;
             let attributionModel = '';
             
-            if (environment === 'ios' && consent === 'present') {
-                attributionModel = 'IDFA';
-            } else if (environment === 'android' && consent === 'present') {
-                attributionModel = 'GAID';
-            } else if (environment === 'ios' && consent === 'absent') {
-                attributionModel = 'SKAN 4.0 (0-35 Days)';
-            } else if (environment.includes('mobile')) {
-                attributionModel = 'Web Attribution (Cookies/Fingerprint)';
-            } else if (consent === 'present') {
-                attributionModel = 'Analytics ID';
+            // Attribution model logic based on environment and consent
+            if (consent === 'present') {
+                // WITH CONSENT - Full attribution
+                if (environment === 'ios') {
+                    attributionModel = 'Deterministic Click (IDFA)';
+                } else if (environment === 'android') {
+                    attributionModel = 'Deterministic Click (GAID)';
+                } else {
+                    attributionModel = 'Deterministic Click (Analytics ID)';
+                }
             } else {
-                attributionModel = 'Probabilistic';
+                // NO CONSENT - Different models based on environment
+                if (environment === 'ios' || environment === 'mobile-safari' || environment === 'desktop-mac') {
+                    // iOS App, Mobile Safari, Desktop-Mac = SKAN 4.0
+                    attributionModel = 'SKAN 4.0 (0-35 Days, Clicks Only)';
+                } else {
+                    // Android, Mobile Chrome, Mobile Firefox, Desktop Windows = AppsFlyer Waterfall
+                    attributionModel = 'AppsFlyer Waterfall (Clicks > Views)';
+                }
             }
             
             const winnerBox = document.createElement('div');
@@ -878,7 +1377,6 @@ Bit 5: Content Viewed</div>
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('install-date').value = today;
         document.getElementById('install-time').value = '14:30';
-        document.getElementById('add-partner-btn').click();
     </script>
 </body>
 </html>
