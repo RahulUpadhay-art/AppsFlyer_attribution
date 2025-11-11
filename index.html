@@ -674,9 +674,9 @@ Bit 5: Content Viewed</div>
             } else {
                 // NO CONSENT
                 if (environment === 'ios') {
-                    attributionType = 'SKAN (SKAdNetwork) - Privacy-Preserving';
-                    accuracy = 'Accuracy: ~60% (Aggregate) | Privacy threshold applies';
-                    signals = '<strong>🔑 Signals:</strong> 6-bit Conversion Value + Campaign ID (No user data)';
+                    attributionType = 'SKAN 4.0 - Privacy-Preserving Attribution';
+                    accuracy = 'Accuracy: ~60% (Aggregate) | 0-35 day lookback window | Subject to anonymity & crowd tiers';
+                    signals = '<strong>🔑 Signals:</strong> 6-bit CV + Campaign ID + Coarse CV | Lookback: 0-2, 3-7, 8-35 days | CLICK-THROUGH ONLY (View-through ignored) | Prioritizes nearest click | Subject to anonymity & crowd tiers';
                     bgColor = '#fff3cd';
                 } else if (environment.includes('mobile')) {
                     attributionType = 'Probabilistic Attribution (Web)';
@@ -852,7 +852,7 @@ Bit 5: Content Viewed</div>
             } else if (environment === 'android' && consent === 'present') {
                 attributionModel = 'GAID';
             } else if (environment === 'ios' && consent === 'absent') {
-                attributionModel = 'SKAN';
+                attributionModel = 'SKAN 4.0 (0-35 Days)';
             } else if (environment.includes('mobile')) {
                 attributionModel = 'Web Attribution (Cookies/Fingerprint)';
             } else if (consent === 'present') {
